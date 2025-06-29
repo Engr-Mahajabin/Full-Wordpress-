@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+
+    <!-- Internal CSS -->
+    <style type="text/css">
+        table {
+            width: 1280px;
+            height: 800px;
+            margin: 0 auto;
+            background: gray;
+            border: 5px solid black;
+        }
+
+        tr,
+        td {
+            width: 213px;
+            height: 160px;
+            border: 1px solid black;
+            text-align: center;
+            color: black;
+        }
+
+        .logo-img {
+            width: 200px;
+            height: 80px;
+        }
+
+        button {
+            padding: 10px 50px;
+            font-size: 10px;
+            background-color: #12C9EF;
+        }
+
+        .main-img {
+            width: 800px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>HTML Layout With Capspan & Rowspan</caption>
+        <tr>
+            <td colspan="2">Logo</td>
+            <!-- <td>1</td> -->
+            <td colspan="4">Menu</td>
+            <!-- <td>1</td>
+            <td>1</td>
+            <td>1</td> -->
+        </tr>
+        <tr>
+            <td colspan="4" rowspan="3">Main Content</td>
+            <!-- <td>1</td>
+            <td>1</td>
+            <td>1</td> -->
+            <td colspan="2" rowspan="3">Side Content</td>
+            <!-- <td>1</td> -->
+        </tr>
+        <tr>
+            <!-- <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td> -->
+            <!-- <td>1</td> -->
+            <!-- <td>1</td> -->
+        </tr>
+        <tr>
+            <!-- <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td> -->
+            <!-- <td>1</td> -->
+            <!-- <td>1</td> -->
+        </tr>
+        <tr>
+            <td colspan="2">Footer</td>
+            <!-- <td>1</td> -->
+            <td colspan="2">Footer</td>
+            <!-- <td>1</td> -->
+            <td colspan="2">Footer</td>
+            <!-- <td>1</td> -->
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <table>
+        <caption>HTML Layout With Capspan & Rowspan</caption>
+        <tr>
+            <td colspan="2">
+                <img class="logo-img" src="Images/logo.png" alt="">
+            </td>
+            <!-- <td>1</td> -->
+            <td colspan="4">
+                <button>Home</button>
+                <button>About</button>
+                <button>Services</button>
+                <button>Blog</button>
+                <button>Contact</button>
+            </td>
+            <!-- <td>1</td>
+            <td>1</td>
+            <td>1</td> -->
+        </tr>
+        <tr>
+            <td colspan="4" rowspan="3">
+                <img class="main-img" src="Images/main.png" alt="">
+            </td>
+            <!-- <td>1</td>
+            <td>1</td>
+            <td>1</td> -->
+            <td colspan="2" rowspan="3">
+                <h1>Latest News</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Adipisci, accusantium! Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Doloribus quos cumque iusto rerum similique officia eum delectus laudantium
+                    voluptates quod?</p>
+            </td>
+            <!-- <td>1</td> -->
+        </tr>
+        <tr>
+            <!-- <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td> -->
+            <!-- <td>1</td> -->
+            <!-- <td>1</td> -->
+        </tr>
+        <tr>
+            <!-- <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td> -->
+            <!-- <td>1</td> -->
+            <!-- <td>1</td> -->
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img class="logo-img" src="Images/logo.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, cupiditate.</p>
+            </td>
+            <!-- <td>1</td> -->
+            <td colspan="2">
+                <h1>Quick Links</h1>
+                <button>Services</button>
+                <button>Blog</button>
+                <button>Contact</button>
+
+            </td>
+            <!-- <td>1</td> -->
+            <td colspan="2">
+                <h1>Resources</h1>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </td>
+            <!-- <td>1</td> -->
+        </tr>
+    </table>
+</body>
+
+</html>
