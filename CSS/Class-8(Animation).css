@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, blue 5%, lightblue 90%);
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    gap: 0;
+}
+
+.s-icon::before {
+    content: "";
+    position: absolute;
+    top: -450px;
+    left: 50%;
+    width: 10px;
+    height: 450px;
+    background-color: black;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.s-icon:hover{
+    transform: scale(1.2);
+}
+.s-icon {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    border-radius: 50%;
+    animation: wave 5s easy-in-out infinite;
+    transition: transform 0.5s ease, background-image 0.5s ease;
+}
+
+.facebook {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5t1KlEoajlWEde_vgZhUFcsewFRQTUJjuQ&s');
+    animation-delay: scale(1.1);
+}
+
+.github{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCi6hApQZkXsC-_smOpgT2B-9IdKY2mN_uEg&s');
+    animation-delay: scale(1.1);
+}
+
+.linkedin{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaHv1RNC6jywjmLc0Zd_1WBMZ9fCx_g5lZNg&s');
+    animation-delay: scale(1.1);
+}
+
+.youtube{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9aEISefcj5WLrSJwqNiSEmZuE4G1jiTpa_Q&s');
+    animation-delay: scale(1.1);
+}

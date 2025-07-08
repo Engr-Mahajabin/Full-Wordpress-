@@ -1,0 +1,123 @@
+body html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    user-select: none;
+}
+
+.cool {
+    position: absolute;
+    pointer-events: none;
+    width: 2px;
+    height: 2px;
+    overflow: hidden;
+    color: transparent;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    margin-top: 95vh;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 999px;
+    background-color: transparent;
+    margin: 100vh 5px 0 5px;
+    z-index: 2;
+    cursor: pointer;
+    transition-duration: .5s;
+    box-shadow: 0 0 10px 0 black;
+}
+
+input:checked+label {
+    background-color: blue;
+}
+
+input+label::after {
+    content: '';
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR702poQYYZLL39uSdvoSfKWE6S-0iriCjdAA&s');
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    line-height: 100vh;
+    transition: background-size 200ms;
+    position: absolute;
+    color: black;
+    height: calc(95vh - 12px);
+    width: 80px;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+input+label:hover::after {
+    background-size: 90px 90px;
+}
+
+input:checked+label::after {
+    background-image: none;
+    width: 100vw;
+    left: 0;
+    z-index: 10;
+}
+
+input:checked+label+.slide~input+label::after {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs54XbKwHc4Jp1ZCuIoAD-Wvny__pyhXU6wA&s');
+    display: block;
+    width: 80px;
+    right: 0;
+    left: auto;
+}
+
+input:focus+label {
+    box-shadow: 0 0 0 5px teal, 0 0 20px white;
+}
+
+.slide {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition-duration: .5s;
+    opacity: 1;
+}
+
+input:checked~.slide {
+    transform: translateX(100%);
+}
+
+input:checked+label+.slide {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.bg1 {
+    background-image: url('https://imgscf.slidemembers.com/docs/1/1/755/software_developer_presentation_google_slides_templates_754832.jpg');
+}
+
+.bg2 {
+    background-image: url('https://imgscf.slidemembers.com/docs/1/1/755/software_developer_presentation_google_slides_templates_754832.jpg');
+}
+
+.bg3 {
+    background-image: url('https://imgscf.slidemembers.com/docs/1/1/755/software_developer_presentation_google_slides_templates_754832.jpg');
+}
+
+.bg4 {
+    background-image: url('https://imgscf.slidemembers.com/docs/1/1/755/software_developer_presentation_google_slides_templates_754832.jpg');
+}
