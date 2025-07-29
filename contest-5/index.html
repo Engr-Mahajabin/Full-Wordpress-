@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psikolog</title>
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/ekiticons3b71.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/lightbox.min.css" />
+    <script type="text/javascript" src="./assets/vendor/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./assets/vendor/js/countUp.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div class="dextheme-container">
+            <div class="dextheme-navbar d-flex w-100 fd">
+                <div class="logo-brand my-auto w-500px">
+                    <img src="./assets/images/main_logo.png">
+                </div>
+                <button class="navbar-toggler ms-auto" type="button" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-expand" href="./about-us.html">
+                                About Us
+                            </a>
+                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarCompany">
+                                <li><a class="dropdown-item" href="./about-me.html">About Me</a></li>
+                                <li><a class="dropdown-item" href="./therapists.html">Therapists</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">
+                                Services
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-expand" href="#" id="navbarProjects" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarProjects">
+                                <li><a class="dropdown-item" href="./appointment.html">Appointment</a></li>
+                                <li><a class="dropdown-item" href="./pricing.html">Pricing</a></li>
+                                <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="./404-page.html">404 Page</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="nav-item button-call">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt" viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z">
+                            </path>
+                        </svg>
+                        <a class="nav-link text-secondary">+800-3374-4676</a>
+                    </span>
+                    <button class="dextheme-btn btn-primary hover-normal no-effect">
+                        Begin Journey
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="dextheme-menu-drawer">
+        <div class="drawer-inner">
+            <div class="logo-brand">
+                <img src="./assets/images/logo.png">
+            </div>
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <a href="." class="nav-link p-3 pt-0">
+                        Home
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="./about-us.html" class="nav-link p-3 pt-0 parent-menu" data-bs-toggle="collapse"
+                        data-bs-target="#about-collapse" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="collapse submenu-drawer" id="about-collapse" style="">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li class="nav-item"><a href="./pages/about-me.html" class="nav-link">About Me</a></li>
+                            <li class="nav-item"><a href="./pages/therapists.html" class="nav-link">Therapists</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <a href="./services.html" class="nav-link p-3 pt-0">
+                        Services
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <a href="#" class="nav-link p-3 pt-0 parent-menu" data-bs-toggle="collapse"
+                        data-bs-target="#pages-collapse" aria-expanded="false">
+                        Pages
+                    </a>
+                    <div class="collapse submenu-drawer" id="pages-collapse" style="">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li class="nav-item"><a class="nav-link" href="./appointment.html">Appointment</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./404-page.html">404 Page</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <a href="./pages/contact.html" class="nav-link p-3 pt-0">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="backdrop" id="drawerBackdrop"></div>
+    <main class="bg-white">
+        <section class="hero-banner" data-bg="./assets/images/Y5Q7LCYa.jpg">
+            <div class="dextheme-container">
+                <div class="row">
+                    <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                        <div class="hero-banner-content">
+                            <h5 class="heading-subtitle dextheme-animation" data-animate="animate__slideInLeft">Welcome
+                                to GMT International Consulting</h5>
+                            <h1 class="heading-title dextheme-animation" data-animate="animate__slideInLeft">A Journey
+                                Toward Mental Wellness.</h1>
+                            <p class="dextheme-animation" data-animate="animate__slideInLeft" data-delay-step="220ms">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                            <a href="#" class="dextheme-btn btn-primary hover-normal mt-3 dextheme-animation"
+                                data-animate="animate__slideInLeft" data-delay-step="210ms">
+                                Professional Support
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dextheme-section-padding bg-secondary-opaque">
+            <div class="dextheme-container">
+                <div class="d-flex flex-wrap g-4">
+                    <div class="dextheme-w-35 dextheme-animation" data-animate="animate__slideInLeft">
+                        <div class="heading-section dextheme-w-90 home-heading">
+                            <h5 class="heading-subtitle">WHAT WE DO?</h5>
+                            <h1 class="heading-title">Guiding You Toward Emotional Wellness.</h1>
+                        </div>
+                    </div>
+                    <div class="dextheme-w-65">
+                        <div class="dextheme-row mx-lg-4">
+                            <div class="dextheme-col-lg-4 dextheme-col-md-12 px-lg-3 dextheme-animation"
+                                data-animate="animate__slideInUp" data-delay-step="200ms">
+                                <div class="image-box-container">
+                                    <img src="./assets/images/CS79RA3a1.png">
+                                    <div class="image-box-content">
+                                        <h4>Empowering Resilience</h4>
+                                        <p>Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dextheme-col-lg-4 dextheme-col-md-12 px-lg-3 dextheme-animation"
+                                data-animate="animate__slideInUp" data-delay-step="210ms">
+                                <div class="image-box-container">
+                                    <img src="./assets/images/CS79RA3b1.png">
+                                    <div class="image-box-content">
+                                        <h4>Healing Space</h4>
+                                        <p>Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dextheme-col-lg-4 dextheme-col-md-12 px-lg-3 dextheme-animation"
+                                data-animate="animate__slideInUp" data-delay-step="220ms">
+                                <div class="image-box-container">
+                                    <img src="./assets/images/CS79RA3c1.png">
+                                    <div class="image-box-content">
+                                        <h4>Transformative Support</h4>
+                                        <p>Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dextheme-section-padding bg-white">
+            <div class="dextheme-container">
+                <div class="dextheme-row g-5">
+                    <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                        <div class="stack-images" data-bg="./assets/images/Overlay-5.png">
+                            <img class="image-base dextheme-w-75 dextheme-animation" data-animate="animate__slideInLeft"
+                                data-delay-step="200ms" src="./assets/images/GDMHLR4.jpg">
+                            <img class="image-floating dextheme-w-55 dextheme-animation"
+                                data-animate="animate__slideInUp" data-delay-step="210ms"
+                                src="./assets/images/HCFNJZK.jpg">
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                        <div class="heading-section mb-5 mt-4">
+                            <h5 class="heading-subtitle">Who We Are</h5>
+                            <h1 class="heading-title mb-4 dextheme-animation" data-animate="animate__slideInLeft"
+                                data-delay-step="200ms">Compassionate Care,<br />Expert Guidance.</h1>
+                            <p class="dextheme-animation" data-animate="animate__slideInLeft" data-delay-step="210ms">
+                                Aliquam iaculis ligula at dui sodales, ut tristique elit maximus. Orci varius natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris suscipit mi ut
+                                est mattis, nec tristique arcu suscipit. Integer
+                                vulputate elit pulvinar.</p>
+                        </div>
+                        <div class="dextheme-row">
+                            <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                                <h4 class="text-primary mb-3">Personalized Solutions</h4>
+                                <p class="text-dark">Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                                    mattis.</p>
+                            </div>
+                            <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                                <h4 class="text-primary mb-3">Proven Expertise</h4>
+                                <p class="text-dark">Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                                    mattis.</p>
+                            </div>
+                            <div class="dextheme-col-md-12 mt-lg-4">
+                                <div class="quotes dextheme-animation" data-animate="animate__slideInLeft"
+                                    data-delay-step="220ms">
+                                    <h4 class="text-primary mb-3 pt-2">
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                                        nec ullamcorper mattis, pulvinar dapibus leo."
+                                    </h4>
+                                    <p>Alex Morgan., Psycholog</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="dextheme-btn btn-primary hover-normal mt-3 mb-4 dextheme-animation"
+                            data-animate="animate__slideInLeft" data-delay-step="230ms">
+                            Find Out More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="client-logo-section bg-white">
+            <div class="dextheme-container">
+                <div data-swiper-active data-swiper-slides-per-view="5" data-swiper-space-between="35"
+                    data-swiper-loop="true" data-swiper-autoplay-delay="4000" data-swiper-navigation="false"
+                    data-swiper-breakpoints='{"320": {"slidesPerView": 1}, "768": {"slidesPerView": 5}}'>
+                    <div class="dextheme-swiper swiper-fade position-relative overflow-hidden mb-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/7NUHLGblue1.png" width="100%">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/7NUHLGblue2.png" width="100%">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/7NUHLGblue3.png" width="100%">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/7NUHLGblue4.png" width="100%">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/7NUHLGblue5.png" width="100%">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/7NUHLGblue6.png" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="dextheme-section-padding bg-secondary-opaque bg-curl">
+            <div class="dextheme-container">
+                <div class="heading-section text-center mb-5 dextheme-w-65 mx-auto">
+                    <h5 class="heading-subtitle">Services</h5>
+                    <h1 class="heading-title mb-4">Supporting You at Every Step.</h1>
+                    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris
+                        suscipit mi ut est mattis, nec tristique arcu suscipit. Integer vulputate elit pulvinar.</p>
+                </div>
+                <div class="dextheme-row g-4 mb-4">
+                    <div class="dextheme-col-lg-3 dextheme-col-md-6 dextheme-col-12">
+                        <div class="dextheme-service-card active dextheme-animation" data-animate="animate__slideInUp">
+                            <div class="card-content">
+                                <img src="./assets/images/CS79RA3d.png">
+                                <h4 class="text-primary">Individual Therapy</h4>
+                                <p>Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                            </div>
+                            <span class="separator-wavy"></span>
+                            <a href="#" class="service-action">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-plus-circle" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z">
+                                    </path>
+                                </svg>
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-3 dextheme-col-md-6 dextheme-col-12">
+                        <div class="dextheme-service-card dextheme-animation" data-animate="animate__slideInUp"
+                            data-delay-step="210ms">
+                            <div class="card-content">
+                                <img src="./assets/images/CS79RA3e.png">
+                                <h4 class="text-primary">Couples Counseling</h4>
+                                <p>Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                            </div>
+                            <span class="separator-wavy"></span>
+                            <a href="#" class="service-action">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-plus-circle" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z">
+                                    </path>
+                                </svg>
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-3 dextheme-col-md-6 dextheme-col-12">
+                        <div class="dextheme-service-card dextheme-animation" data-animate="animate__slideInUp"
+                            data-delay-step="220ms">
+                            <div class="card-content">
+                                <img src="./assets/images/CS79RA3f.png">
+                                <h4 class="text-primary">Family Support</h4>
+                                <p>Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                            </div>
+                            <span class="separator-wavy"></span>
+                            <a href="#" class="service-action">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-plus-circle" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z">
+                                    </path>
+                                </svg>
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-3 dextheme-col-md-6 dextheme-col-12">
+                        <div class="dextheme-service-card dextheme-animation" data-animate="animate__slideInUp"
+                            data-delay-step="230ms">
+                            <div class="card-content">
+                                <img src="./assets/images/CS79RA3g.png">
+                                <h4 class="text-primary">Child Counseling</h4>
+                                <p>Consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                            </div>
+                            <span class="separator-wavy"></span>
+                            <a href="#" class="service-action">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-plus-circle" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z">
+                                    </path>
+                                </svg>
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="dextheme-btn btn-primary hover-normal mt-3">
+                        Find Your Service
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="dextheme-section-padding bg-white">
+            <div class="dextheme-container">
+                <div class="dextheme-row g-5">
+                    <div class="dextheme-col-lg-6 dextheme-col-md-12 d-flex flex-column justify-content-center">
+                        <div class="heading-section mb-4">
+                            <h5 class="heading-subtitle">Our Commitment to You</h5>
+                            <h1 class="heading-title mb-4 dextheme-w-55">Your Wellbeing Is Our Priority.</h1>
+                            <p>Aliquam iaculis ligula at dui sodales, ut tristique elit maximus. Orci varius natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris suscipit mi ut
+                                est mattis, nec tristique arcu suscipit. Integer
+                                vulputate elit pulvinar.</p>
+                        </div>
+                        <div class="dextheme-w-85 progress-body mb-5 pt-2">
+                            <div class="progress-container">
+                                <div class="progress-title">Client Satisfaction Rate</div>
+                                <div class="progress-label">0%</div>
+                                <div class="progress-line" data-value="0.92" data-color="#052B44"></div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-title">Success in Goal Achievement</div>
+                                <div class="progress-label">0%</div>
+                                <div class="progress-line" data-value="0.95" data-color="#052B44"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-5 pt-2">
+                            <div class="dextheme-w-35">
+                                <div class="wellbeing-counter">
+                                    <h2 class="text-primary m-2 lh-1 counter" data-count="99" data-suffix="+">0+</h2>
+                                    <h4 class="text-primary m-0 lh-1">Certified Mental Health Experts</h4>
+                                </div>
+                            </div>
+                            <div class="dextheme-w-35">
+                                <div class="wellbeing-counter">
+                                    <h2 class="text-primary m-2 lh-1 counter" data-count="624" data-suffix="+">0+</h2>
+                                    <h4 class="text-primary m-0 lh-1">Lives Transformed Successfully</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                        <div class="bg-with-image">
+                            <img src="assets/images/5BCJ884.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dextheme-section-padding bg-secondary-opaque bg-curl">
+            <div class="dextheme-container">
+                <div class="heading-section text-center mb-5 dextheme-w-65 mx-auto">
+                    <h5 class="heading-subtitle">Client Reviews</h5>
+                    <h1 class="heading-title mb-4">Hear Stories of Positive Change.</h1>
+                    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris
+                        suscipit mi ut est mattis, nec tristique arcu suscipit. Integer vulputate elit pulvinar.</p>
+                </div>
+                <div class="swiper-anim swiper-fade position-relative review-card-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide review-card-shadow">
+                            <div class="review-card @@class">
+                                <i aria-hidden="true" class="icon icon-quote"></i>
+                                <div class="user-avatar">
+                                    <img src="./assets/images/UBNG9AEii.jpg">
+                                </div>
+                                <div class="user-profile">
+                                    <h5>Emma Johnson</h5>
+                                    <span>Marketing Manager</span>
+                                </div>
+                                <div class="user-comment">
+                                    <p>The guidance I received here has truly transformed my life. I’ve found peace,
+                                        clarity, and balance thanks to their compassionate approach.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-card-shadow">
+                            <div class="review-card @@class">
+                                <i aria-hidden="true" class="icon icon-quote"></i>
+                                <div class="user-avatar">
+                                    <img src="./assets/images/UBNG9AEii.jpg">
+                                </div>
+                                <div class="user-profile">
+                                    <h5>Emma Johnson</h5>
+                                    <span>Marketing Manager</span>
+                                </div>
+                                <div class="user-comment">
+                                    <p>The guidance I received here has truly transformed my life. I’ve found peace,
+                                        clarity, and balance thanks to their compassionate approach.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-card-shadow">
+                            <div class="review-card @@class">
+                                <i aria-hidden="true" class="icon icon-quote"></i>
+                                <div class="user-avatar">
+                                    <img src="./assets/images/UBNG9AEii.jpg">
+                                </div>
+                                <div class="user-profile">
+                                    <h5>Emma Johnson</h5>
+                                    <span>Marketing Manager</span>
+                                </div>
+                                <div class="user-comment">
+                                    <p>The guidance I received here has truly transformed my life. I’ve found peace,
+                                        clarity, and balance thanks to their compassionate approach.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide review-card-shadow">
+                            <div class="review-card @@class">
+                                <i aria-hidden="true" class="icon icon-quote"></i>
+                                <div class="user-avatar">
+                                    <img src="./assets/images/UBNG9AEii.jpg">
+                                </div>
+                                <div class="user-profile">
+                                    <h5>Emma Johnson</h5>
+                                    <span>Marketing Manager</span>
+                                </div>
+                                <div class="user-comment">
+                                    <p>The guidance I received here has truly transformed my life. I’ve found peace,
+                                        clarity, and balance thanks to their compassionate approach.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="consultation-section bg-white">
+            <div class="dextheme-container">
+                <div class="dextheme-row">
+                    <div class="dextheme-col-lg-4 dextheme-col-md-12">
+                        <div class="contact-info">
+                            <div class="heading-section mb-4">
+                                <h5 class="heading-subtitle dextheme-animation" data-animate="animate__slideInLeft">
+                                    Always Here for You</h5>
+                                <h1 class="heading-title mb-4 dextheme-animation" data-animate="animate__slideInLeft">
+                                    Your Journey Begins with Us.</h1>
+                                <p class="dextheme-animation" data-animate="animate__slideInLeft">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Nulla ullamcorper tempus est. Donec sit amet
+                                    lorem at.</p>
+                            </div>
+                            <div class="contact-info-list pt-3">
+                                <div class="info-item dextheme-animation" data-animate="animate__slideInLeft">
+                                    <span class="info-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div class="info-text">
+                                        <span class="text-secondary">Call Us</span>
+                                        <p class="text-primary">+800-3374-4676 </p>
+                                    </div>
+                                </div>
+                                <div class="info-item dextheme-animation" data-animate="animate__slideInLeft">
+                                    <span class="info-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-envelope"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div class="info-text">
+                                        <span class="text-secondary">Mail Us</span>
+                                        <p class="text-primary">hola@dominantsite.com </p>
+                                    </div>
+                                </div>
+                                <div class="info-item dextheme-animation" data-animate="animate__slideInLeft">
+                                    <span class="info-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt"
+                                            viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <div class="info-text">
+                                        <span class="text-secondary">Visit Us</span>
+                                        <p class="text-primary">456 Creative District Ahmad Yani, Medan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-4 dextheme-col-md-12">
+                        <div class="consultation-form bg-secondary-opaque dextheme-animation"
+                            data-animate="animate__slideInDown">
+                            <div class="heading-text">
+                                <h4>Arrange a Consultation.</h4>
+                                <p>Mauris suscipit mi ut est mattis, nec tristique arcu suscipit. Integer vulputate elit
+                                    pulvinar</p>
+                            </div>
+                            <div class="dextheme-row gy-4 mb-4">
+                                <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                                <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                                    <input type="email" placeholder="Your Email">
+                                </div>
+                                <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                                    <input type="text" placeholder="Phone Number">
+                                </div>
+                                <div class="dextheme-col-lg-6 dextheme-col-md-12">
+                                    <select placeholder="Select Service">
+                                        <option value="" selected="selected">Select Service</option>
+                                        <option value="Individual Therapy">Individual Therapy</option>
+                                        <option value="Couples Counseling">Couples Counseling</option>
+                                        <option value="Family Support">Family Support</option>
+                                        <option value="Child Counseling">Child Counseling</option>
+                                    </select>
+                                </div>
+                                <div class="dextheme-col-md-12">
+                                    <textarea rows="5" placeholder="Tell us your mind here..."></textarea>
+                                </div>
+                            </div>
+                            <button class="dextheme-btn btn-secondary hover-primary no-effect">
+                                Submit Request
+                            </button>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-4 dextheme-col-md-12">
+                        <div class="stack-images bg-size-contain" data-bg="./assets/images/Overlay-5.png">
+                            <img class="image-base dextheme-w-100 dextheme-animation" data-animate="animate__slideInUp"
+                                src="./assets/images/Z48HLNN.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="methodology-section dextheme-section-padding" data-bg="./assets/images/6YGCWT7.jpg">
+            <div class="dextheme-container">
+                <div class="heading-section text-center mb-4 dextheme-w-65 mx-auto">
+                    <h5 class="heading-subtitle">Our Methodology</h5>
+                    <h1 class="heading-title text-white mb-4">Guiding You Step by Step.</h1>
+                    <p class="text-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Mauris suscipit mi ut est mattis, nec tristique arcu suscipit. Integer vulputate
+                        elit pulvinar.</p>
+                </div>
+                <div class="methodology-steps pt-3">
+                    <div class="each-step">
+                        <div class="step-heading">
+                            <h3>1.</h3>
+                        </div>
+                        <div class="step-text text-center text-white">
+                            <h4>Understand Your Needs</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                        </div>
+                    </div>
+                    <div class="each-step">
+                        <div class="step-heading">
+                            <h3>2.</h3>
+                        </div>
+                        <div class="step-text text-center text-white">
+                            <h4>Create a Plan</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                        </div>
+                    </div>
+                    <div class="each-step">
+                        <div class="step-heading">
+                            <h3>3.</h3>
+                        </div>
+                        <div class="step-text text-center text-white">
+                            <h4>Work Together Progress</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                        </div>
+                    </div>
+                    <div class="each-step">
+                        <div class="step-heading">
+                            <h3>4.</h3>
+                        </div>
+                        <div class="step-text text-center text-white">
+                            <h4>Empowering Lasting Growth</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-section bg-white">
+            <div class="dextheme-container">
+                <div class="video-box-wrapper" data-bg="./assets/images/UETR3EK.jpg">
+                    <a href="#" class="video-button-play">
+                        <i aria-hidden="true" class="icon icon-play1"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="dextheme-section-padding bg-white">
+            <div class="dextheme-container">
+                <div class="heading-section text-center mb-5 dextheme-w-65 mx-auto">
+                    <h5 class="heading-subtitle">Wellness Journal</h5>
+                    <h1 class="heading-title mb-4">Inspiration for Positive Change.</h1>
+                    <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris
+                        suscipit mi ut est mattis, nec tristique arcu suscipit. Integer vulputate elit pulvinar.</p>
+                </div>
+                <div class="dextheme-row mb-4">
+                    <div class="dextheme-col-lg-4 dextheme-md-12">
+                        <div class="blog-card-item">
+                            <div class="blog-card-thumbnail">
+                                <img src="./assets/images/CA758KN.jpg">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-meta">
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-user me-2"></i>
+                                        <span>Arkhan</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-calendar3 me-2"></i>
+                                        <span>January 3, 2025</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-comment me-2"></i>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <h4 class="text-primary mb-3">Creating Balance for Mental Health</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus
+                                    est. Donec sit amet lorem at ex eleifend convallis eu vitae nisl. Nullam ornare
+                                    aliquam faucibus. Etiam elementum elit a sollicitudin mollis.
+                                    Aenean et…</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-4 dextheme-md-12">
+                        <div class="blog-card-item">
+                            <div class="blog-card-thumbnail">
+                                <img src="./assets/images/UETR3EK.jpg">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-meta">
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-user me-2"></i>
+                                        <span>Arkhan</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-calendar3 me-2"></i>
+                                        <span>January 3, 2025</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-comment me-2"></i>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <h4 class="text-primary mb-3">Healing Trauma with Expert Guidance</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus
+                                    est. Donec sit amet lorem at ex eleifend convallis eu vitae nisl. Nullam ornare
+                                    aliquam faucibus. Etiam elementum elit a sollicitudin mollis.
+                                    Aenean et…</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-lg-4 dextheme-md-12">
+                        <div class="blog-card-item">
+                            <div class="blog-card-thumbnail">
+                                <img src="./assets/images/CNEYHGL-1024x683.jpg">
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-meta">
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-user me-2"></i>
+                                        <span>Arkhan</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-calendar3 me-2"></i>
+                                        <span>January 3, 2025</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <i aria-hidden="true" class="icon icon-comment me-2"></i>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <h4 class="text-primary mb-3">Managing Stress in Modern Life</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper tempus
+                                    est. Donec sit amet lorem at ex eleifend convallis eu vitae nisl. Nullam ornare
+                                    aliquam faucibus. Etiam elementum elit a sollicitudin mollis.
+                                    Aenean et…</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="wellness-journey-section dextheme-section-padding" data-bg="./assets/images/L9KTTNS.jpg">
+            <div class="dextheme-container my-4">
+                <div class="heading-section text-center mb-3 dextheme-w-65 mx-auto">
+                    <h1 class="heading-title text-white mb-4 dextheme-animation" data-animate="animate__slideInUp"
+                        data-delay-step="250ms">Start Your Wellness Journey Here.</h1>
+                    <p class="text-white">Etiam sit amet sapien urna. Vestibulum efficitur sapien vehicula, posuere enim
+                        nec, posuere justo. Praesent facilisis lobortis commodo. Phasellus at dictum tellus, id aliquet
+                        dolor. Nulla elementum elit nibh.</p>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="dextheme-btn outline-white hover-secondary mt-4">
+                        Request Support
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="dextheme-footer">
+        <div class="footer-main">
+            <div class="dextheme-container d-flex flex-wrap">
+                <div class="dextheme-w-45">
+                    <div class="dextheme-row">
+                        <div class="dextheme-col-md-6">
+                            <div class="d-flex flex-column gap-4">
+                                <img src="./assets/images/main_logo.png" width="230">
+                                <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                    tellus, luctus nec ullamcorper.</p>
+                            </div>
+                        </div>
+                        <div class="dextheme-col-md-6">
+                            <div class="dextheme-w-75 d-flex ms-auto gap-2 flex-column">
+                                <h4 class="text-secondary mb-1">Explore</h4>
+                                <ul class="footer-menu-list">
+                                    <li class="footer-menu-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li class="footer-menu-item">
+                                        <a href="#">Appointment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dextheme-w-55">
+                    <div class="dextheme-row">
+                        <div class="dextheme-col-md-7">
+                            <div class="d-flex ms-auto gap-2 flex-column popular-services">
+                                <h4 class="text-secondary mb-1">Popular Services</h4>
+                                <div class="dextheme-row">
+                                    <div class="dextheme-col-md-6">
+                                        <ul class="footer-menu-list">
+                                            <li class="footer-menu-item">
+                                                <a href="#">Individual Therapy</a>
+                                            </li>
+                                            <li class="footer-menu-item">
+                                                <a href="#">Couples Counseling</a>
+                                            </li>
+                                            <li class="footer-menu-item">
+                                                <a href="#">Family Support</a>
+                                            </li>
+                                            <li class="footer-menu-item">
+                                                <a href="#">Child Counseling</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dextheme-col-md-6">
+                                        <ul class="footer-menu-list">
+                                            <li class="footer-menu-item">
+                                                <a href="#">Trauma Recovery</a>
+                                            </li>
+                                            <li class="footer-menu-item">
+                                                <a href="#">Stress Management</a>
+                                            </li>
+                                            <li class="footer-menu-item">
+                                                <a href="#">Career Coaching</a>
+                                            </li>
+                                            <li class="footer-menu-item">
+                                                <a href="#">Group Therapy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dextheme-col-md-5">
+                            <div class="d-flex ms-auto gap-2 flex-column contact-us">
+                                <h4 class="text-secondary mb-1">Contact Us</h4>
+                                <ul class="footer-contact-us">
+                                    <li class="footer-contact-us-item">
+                                        <i aria-hidden="true" class="icon icon-map-marker1"></i>
+                                        <a href="#">456 Creative District Ahmad Yani, Medan</a>
+                                    </li>
+                                    <li class="footer-contact-us-item">
+                                        <i aria-hidden="true" class="icon icon-envelope3"></i>
+                                        <a href="#">hola@dominantsite.com</a>
+                                    </li>
+                                    <li class="footer-contact-us-item">
+                                        <i aria-hidden="true" class="icon icon-phone-call2"></i>
+                                        <a href="#">+800-3374-4676</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary">
+            <div class="footer-lower dextheme-container">
+                <div class="dextheme-row py-3">
+                    <div class="dextheme-col-md-6">
+                        <div class="footer-social-media">
+                            <a href="#" class="social-media-link">
+                                <svg class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-media-link">
+                                <svg class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-media-link">
+                                <svg class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dextheme-col-md-6">
+                        <div class="footer-copyright justify-content-md-end">
+                            <p>GMT International Consulting, 2025 © All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./assets/vendor/js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/vendor/js/countUp.min.js"></script>
+    <script type="text/javascript" src="./assets/vendor/js/progressbar.min.js"></script>
+    <script type="text/javascript" src="./assets/vendor/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPath = window.location.pathname;
+
+            // Ambil semua link dari navbar
+            const allLinks = document.querySelectorAll('.navbar-nav a.nav-link, .navbar-nav a.dropdown-item');
+
+            allLinks.forEach(link => {
+                const href = link.getAttribute('href');
+
+                // Abaikan jika href kosong atau #
+                if (!href || href === '#') return;
+
+                // Buat URL absolut dari href
+                const linkUrl = new URL(href, window.location.origin);
+
+                // Jika cocok dengan path sekarang
+                if (linkUrl.pathname === currentPath) {
+                    // Tambah active ke link yang cocok
+                    link.classList.add('active');
+
+                    // Jika ini dropdown-item, tambahkan active ke parent nav-link-nya
+                    const parentDropdown = link.closest('.dropdown');
+                    if (parentDropdown) {
+                        const parentLink = parentDropdown.querySelector('.nav-link');
+                        if (parentLink) {
+                            parentLink.classList.add('active');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
