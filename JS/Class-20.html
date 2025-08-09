@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to JavaScript</h1>
+    <h3>Data Types</h3>
+    <ul>
+        <li>String > "Freedom","Ritu"</li>
+        <li>Number > 2025</li>
+        <li>Boolean > True/False</li>
+    </ul>
+
+    <h1 id="hw">Hello World!</h1>
+    <button onclick="document.getElementById('hw').innerHTML='Welcome JS First Class' ">Click Here</button>
+    <h1 id="mg">Magic!</h1>
+    <button onclick="document.getElementById('mg').style.color='red' ">Click Here</button>
+
+    <br>
+    <br>
+
+    <img id="dream" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0YQsxcZzdLD8lA5YQWP1G37jnyO1ZXMdYg&s"
+        alt="">
+    <br>
+    <button
+        onclick="document.getElementById('dream').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZt8LJwz0939BJGL7DbxBeeqoGrKbqvmleIw&s'">Dream-1</button>
+    <button
+        onclick="document.getElementById('dream').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypyqmAIpUqrGLUBOz-PjWFUouy-G9qzQ8lQ&s'">Dream-2</button>
+    <button
+        onclick="document.getElementById('dream').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT110fZ8fh8fcVRObsPAFpWBzU-ABnUEXxDqA&s'">Dream-3</button>
+
+    <h3 id="ans">Mathematics</h3>
+    <script>
+        var a = 50;
+        var b = 20;
+        var sum = a + b;
+        var sub = a - b;
+        var mul = a * b;
+        var div = a / b;
+        // console.log('Sum of a & b is: ', sum);
+        document.getElementById('ans').innerHTML = 'Sum of a & b is: ' + sum + '<br>' + 'Subtraction of a & b is: ' + sub + '<br>' + 'Multiplication of a & b is: ' + mul + '<br>' + 'Division of a & b is: ' + div;
+
+        var name = 'Ritu';
+        var age = 25;
+        var district = 'Dhaka';
+        var db = '23 Dec';
+        var email = 'ritugmail.com';
+        var phone = '320839792';
+
+        document.write(name, '<br>');
+        document.write(age, '<br>');
+        document.write(district, '<br>');
+        document.write(db, '<br>');
+        document.write(email, '<br>');
+        document.write(phone, '<br>');
+
+    </script>
+
+</body>
+
+</html>
