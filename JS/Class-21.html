@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //For loop:
+        var a = 5;
+        for (a; a <= 10; a++) {
+            document.write(a, '<br>');
+        }
+
+        document.write('<br>');
+
+        // Even Numbers
+        var i = 1;
+        for (i; i <= 10; i++) {
+            if (i % 2 === 0) {
+                document.write(i + " is Even<br>");
+            }
+        }
+
+        document.write('<br>');
+
+        // Odd Numbers
+        var i = 1;
+        for (i; i <= 10; i++) {
+            if (i % 2 !== 0) {
+                document.write(i + " is Odd<br>");
+            }
+        }
+
+        document.write('<br>');
+
+        // While loop:
+        var a = 55;
+        while (a <= 65) {
+            document.write(a + '<br>');
+            a++;
+        }
+
+        document.write('<br>');
+
+        //do while loop:
+        var a = 50;
+        do {
+            document.write(a + '<br>');
+            a++;
+        } while (a <= 55);
+
+        document.write('<br>');
+
+        var fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+        for (var i = 0; i < fruits.length; i++) {
+            document.write("Index: " + i + "->" + fruits[i] + "<br>");
+        }
+
+        document.write('<br>');
+
+        var age = 25;
+
+        if (age >= 18) {
+            document.write("Yes, you can vote");
+        } else {
+            document.write("No, you can't vote");
+        }
+
+
+    </script>
+</body>
+
+</html>
