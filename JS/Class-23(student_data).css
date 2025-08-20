@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border: 10px solid cyan;
+  border-radius: 50px;
+  width: 800px;
+  margin: 40px auto;
+}
+
+.header h1 {
+  font-weight: bold;
+}
+
+.header h3 {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.header p {
+  margin: 5px;
+}
+
+.main-part {
+  background-color: black;
+  width: 800px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  border: 10px solid cyan;
+}
+
+.t-design {
+  margin-top: 30px;
+}
+
+th,
+td {
+  padding: 10px 50px;
+}

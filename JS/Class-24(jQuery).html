@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+            background-color: lightskyblue;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: colomn;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .box {
+            background-color: lightskyblue;
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .fade-btn {
+            display: block;
+        }
+
+        .div-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        #div1,
+        #div2,
+        #div3 {
+            width: 30%;
+            height: 200px;
+            float: left;
+            margin: 5px;
+            color: black;
+            font-size: large;
+            text-align: center;
+        }
+
+        #div1 {
+            background-color: tomato;
+        }
+
+        #div2 {
+            background-color: blue;
+        }
+
+        #div3 {
+            background-color: green;
+        }
+
+        #flif,
+        #panel {
+            text-align: center;
+            background-color: brown;
+            border: 2px solid black;
+        }
+
+        #panel {
+            display: none;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Introduction to JQery</h1>
+    <h2 class="boom">What is jQuery?</h2>
+    <h2>Introduction to JQuery</h2>
+    <h3>What is jQery?</h3>
+    <p class="cool">jQuery is a lightweight, "write less, do more", JavaScript library.
+
+        The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+        jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into
+        methods that you can call with a single line of code.
+
+        jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+    </p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="box">
+            <h3>Mouse Enter</h3>
+            <p style="width: 500px;" class="me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio
+                quibusdam velit doloribus
+                doloremque rem harum eos, nam accusamus optio! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nulla
+                earum quisquam est optio numquam accusamus repudiandae eos quidem blanditiis accusantium.</p>
+        </div>
+
+
+        <div class="box">
+            <h3>Mouse Leave</h3>
+            <p style="width: 500px;" class="ml">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio
+                quibusdam velit doloribus
+                doloremque rem harum eos, nam accusamus optio! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nulla
+                earum quisquam est optio numquam accusamus repudiandae eos quidem blanditiis accusantium.</p>
+        </div>
+
+        <div class="box">
+            <h3>Hide & Show</h3>
+            <p style="width: 500px;" class="hide-show">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo
+                odio
+                quibusdam velit doloribus
+                doloremque rem harum eos, nam accusamus optio! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nulla
+                earum quisquam est optio numquam accusamus repudiandae eos quidem blanditiis accusantium.</p>
+            <button id="hide2">Hide</button>
+            <button id="show2">Show</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <button class="fade-btn">Fade Toggle</button>
+
+    <div class="div-box">
+        <div id="div1">Div1</div>
+        <div id="div2">Div2</div>
+        <div id="div3">Div3</div>
+    </div>
+
+    <h3>Click to slide</h3>
+    <div id="flif">Why me?</div>
+    <div id="panel">High quality design</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- js file link -->
+    <script src="Class-24(jQery).js"></script>
+</body>
+
+</html>

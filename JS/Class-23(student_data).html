@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_data</title>
+    <link rel="stylesheet" href="Class-23(student_data).css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Freedom IT Institutions</h1>
+        <h3>WebDesign & Development</h3>
+        <h6>Batch-14 JavaScript Student_data Project</h6>
+    </div>
+
+    <script>
+        document.write("<div class='main-part'>")
+        document.write("<input type='text' name='data' id='data'>");
+        document.write("<input type='submit' name='submit' id='submit' onClick='checkinput()'>");
+
+        document.write("<table class='t-design' border='2' cellpadding='40'>");
+        document.write("<tr>");
+        document.write("<th>Roll</th>")
+        document.write("<th>Name</th>")
+        document.write("<th>Batch</th>")
+        document.write("<th>Reg_No</th>")
+        document.write("<th>Department</th>")
+        document.write("</tr>");
+
+        document.write("<tr>");
+        document.write("<td id='roll'></td>");
+        document.write("<td id='name'></td>");
+        document.write("<td id='batch'></td>");
+        document.write("<td id='reg_no'></td>");
+        document.write("<td id='department'></td>");
+        document.write("</table>");
+
+        document.write("</div>")
+
+        function checkinput() {
+            var input = document.getElementById("data").value;
+            if (input === '1') {
+                document.getElementById("roll").innerHTML = '1';
+                document.getElementById("name").innerHTML = 'Farhana Sufi';
+                document.getElementById("batch").innerHTML = 'Batch-14';
+                document.getElementById("reg_no").innerHTML = 'FIT-WDD-1401';
+                document.getElementById("department").innerHTML = 'Web Design & Development';
+            } else if (input === '2') {
+                document.getElementById("roll").innerHTML = '2';
+                document.getElementById("name").innerHTML = 'Sumon';
+                document.getElementById("batch").innerHTML = 'Batch-14';
+                document.getElementById("reg_no").innerHTML = 'FIT-WDD-1402';
+                document.getElementById("department").innerHTML = 'Web Design & Development';
+            } else if (input === '3') {
+                document.getElementById("roll").innerHTML = '3';
+                document.getElementById("name").innerHTML = 'Ritu';
+                document.getElementById("batch").innerHTML = 'Batch-14';
+                document.getElementById("reg_no").innerHTML = 'FIT-WDD-1403';
+                document.getElementById("department").innerHTML = 'Web Design & Development';
+            } else {
+                alert("Wrong Input");
+            }
+        }
+    </script>
+</body>
+
+</html>
